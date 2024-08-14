@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes de Aventura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .video-item {
+            flex: 1 1 calc(50% - 1rem);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .video-item h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0.5rem;
+            background: #f4f4f4;
+        }
+        .video-item p {
+            padding: 0 0.5rem;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .video-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Catálogo de Filmes de Aventura</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="video-catalog">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/cqRSYGAXKhU" title="Ogro" frameborder="0" allowfullscreen></iframe>
+                <h2>Filme de Aventura 1</h2>
+                <p>Descrição breve do Filme de Aventura 1.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/BOm9F1HrJ-w" title="Guardioes Dos Tempos" frameborder="0" allowfullscreen></iframe>
+                <h2>Filme de Aventura 2</h2>
+                <p>Descrição breve do Filme de Aventura 2.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/PJoGVv8INc4" title="Viagem Ao Vale Proibido" frameborder="0" allowfullscreen></iframe>
+                <h2>Filme de Aventura 3</h2>
+                <p>Descrição breve do Filme de Aventura 3.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/12FeFo_bOXE" title="O Rei Da Montanha" frameborder="0" allowfullscreen></iframe>
+                <h2>Filme de Aventura 4</h2>
+                <p>Descrição breve do Filme de Aventura 4.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
